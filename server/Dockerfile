@@ -31,7 +31,7 @@ ENV SENTRY_AUTH_TOKEN $SENTRY_AUTH_TOKEN
 
 RUN pnpm run build --filter server
 
-FROM mcr.microsoft.com/playwright:v1.28.0-focal as production
+FROM mcr.microsoft.com/playwright:v1.28.1-focal as production
 
 WORKDIR /app
 
